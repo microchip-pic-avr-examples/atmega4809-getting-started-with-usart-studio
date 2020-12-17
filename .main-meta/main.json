@@ -1,0 +1,58 @@
+{
+    "metaDataVersion": "1.0.0",
+    "category": "com.microchip.ide.project",
+    "content": {
+        "metaDataVersion": "1.1.0",
+        "name": "com.microchip.mcu8.studio.project.atmega4809-getting-started-with-usart-studio",
+        "version": "1.0.0",
+        "displayName": "  ",
+        "projectName": "atmega4809-getting-started-with-usart-studio",
+        "shortDescription": "",
+        "ide": {
+            "name": "STUDIO",
+            "semverRange": ""
+        },
+        "compiler": [
+			{
+				"name": "",
+				"semverRange": ""
+			}
+		],
+        "dfp": {
+            "name": "",
+            "semverRange": ""
+        },
+        "configurator": {
+            "name": "",
+            "semverRange": ""
+        },
+        "device": {
+            "metaDataVersion": "1.0.0",
+            "category": "com.microchip.portal.contentRef",
+            "content": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.device",
+                "name": "",
+                "versionRange": "*"
+            }
+        },
+        "author": "",
+        "subcategories": [
+        ],
+        "peripherals": [
+        ],
+        "keywords": [
+        ],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./README.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

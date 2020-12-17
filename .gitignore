@@ -1,0 +1,11 @@
+# Untracked files in Studio projects
+/**/.vs
+/**/*.atsuo
+/**/[Dd]ebug/*
+/**/[Rr]elease/*
+
+# Uncomment these to include hex/elf files
+#!/**/[Dd]ebug/*.hex
+#!/**/[Dd]ebug/*.elf
+#!/**/[Rr]elease/*.hex
+#!/**/[Rr]elease/*.elf

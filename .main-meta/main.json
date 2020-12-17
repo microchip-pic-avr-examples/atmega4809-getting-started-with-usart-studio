@@ -23,8 +23,8 @@
             "semverRange": "^1.4.351"
         },
         "configurator": {
-            "name": "START",
-            "semverRange": ">=1.7.360"
+            "name": "N/A",
+            "semverRange": ""
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -52,6 +52,7 @@
             "USART"
         ],
         "keywords": [
+            "Bare Metal"
         ],
 		"additionalData": {
 			"longDescription": {

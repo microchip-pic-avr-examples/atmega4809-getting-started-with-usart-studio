@@ -5,26 +5,26 @@
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.studio.project.atmega4809-getting-started-with-usart-studio",
         "version": "1.0.0",
-        "displayName": "  ",
+        "displayName": "Getting Started with USART",
         "projectName": "atmega4809-getting-started-with-usart-studio",
-        "shortDescription": "",
+        "shortDescription": "This repository contains 5 bare metal code examples described in the TB3216-Getting Started with USART.",
         "ide": {
             "name": "STUDIO",
-            "semverRange": ""
+            "semverRange": ">=7.0.2397"
         },
         "compiler": [
 			{
-				"name": "",
-				"semverRange": ""
+				"name": "AVR-GCC",
+				"semverRange": "^5.4.0"
 			}
 		],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "ATmega_DFP",
+            "semverRange": "^1.4.351"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "START",
+            "semverRange": ">=1.7.360"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,14 +32,24 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "ATmega4809",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
+            "START",
+            [
+                "Peripherals",
+                "USART"
+            ],
+            [
+                "Development Kit",
+                "ATmega4809 Xplained Pro"
+            ]
         ],
         "peripherals": [
+            "USART"
         ],
         "keywords": [
         ],

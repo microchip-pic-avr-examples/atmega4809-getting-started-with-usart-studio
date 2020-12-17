@@ -1,41 +1,28 @@
 <!-- Please do not change this logo with link -->
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Update the title for atmega4809-getting-started-with-usart-studio here
+# Getting Started with Universal Synchronous and Asynchronous Receiver and Transmitter (USART) Examples (Microchip Studio)
 
-<!-- This is where the introduction to the example goes, including mentioning the peripherals used -->
+  This repository contains examples of bare metal source code for Universal Synchronous and Asynchronous Receiver and Transmitter (USART) as described in [TB3216-Universal Synchronous and Asynchronous Receiver and Transmitter (USART)](https://www.microchip.com/) document from Microchip. The repository contains an Microchip Studio Solution with multiple projects inside:
 
+  * [<strong>Send Hello World:</strong>](Send_Hello_World) This use case demonstrates how to send a string to the PC via serial communication using the USART peripheral (for more details, see [<strong>Send Hello World</strong>](Send_Hello_World)).
+  * [<strong>Send Formatted Strings Using 'printf':</strong>](Send_Formatted_Strings_Using_Printf) This use case shows how to send formatted strings through USART. This example sends the value of a counter every 500 ms and then increases it (for more details, see [<strong> Send Fromatted Strings Using 'printf'</strong>](Send_Formatted_String_Using_Printf)).
+  * [<strong>Receive Control Commands:</strong>](Receive_Control_Commands) This use case shows how to implement a command line interface using the USART peripheral (for more details, see [<strong>Receive Control Commands</strong>](Receive_Control_Commands)).
+  * [<strong>Synchronous Mode:</strong>](Synchronous_Mode) This use case demonstrates how to send one character using the USART synchronous mode (for more details, see [<strong>Synchronous Mode</strong>](Synchronous_Mode)).
+  * [<strong>One-Wire Mode:</strong>](One_Wire_Mode) This use case demonstrates how to send a character string using the USART one wire mode (for more details, see [<strong>One-Wire Mode</strong>](One_Wire_Mode)).
+  
 ## Related Documentation
+More details and code examples on the ATMEGA4809 can be found at the following links:
+- [TB3216-Getting Started with USART](https://ww1.microchip.com/downloads/en/Appnotes/TB3216-Getting-Started-with-USART-90003216B.pdf)
+- [ATMEGA4809 Product Page](https://www.microchip.com/wwwproducts/en/ATMEGA4809)
+- [ATMEGA4809 Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=atmega4809)
+- [ATMEGA4809 Project Examples in START](https://start.atmel.com/#examples/ATMEGA4809XplainedPro)
 
-<!-- Any information about an application note or tech brief can be linked here. Use unbreakable links!
-     In addition a link to the device family landing page and relevant peripheral pages as well:
-     - [AN3381 - Brushless DC Fan Speed Control Using Temperature Input and Tachometer Feedback](https://microchip.com/00003381/)
-     - [PIC18F-Q10 Family Product Page](https://www.microchip.com/design-centers/8-bit/pic-mcus/device-selection/pic18f-q10-product-family) -->
 
 ## Software Used
+- Microchip Studio 7.0.2397 or newer [(microchip.com/mplab/microchip-studio)](https://www.microchip.com/mplab/microchip-studio)
+- ATmega_DFP 1.5.362 or newer Device Pack
 
-<!-- All software used in this example must be listed here. Use unbreakable links!
-     - MPLAB® X IDE 5.30 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
-     - MPLAB® XC8 2.10 or a newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
-     - MPLAB® Code Configurator (MCC) 3.95.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - MPLAB® Code Configurator (MCC) Device Libraries PIC10 / PIC12 / PIC16 / PIC18 MCUs [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - Microchip PIC18F-Q Series Device Support (1.4.109) or newer [(packs.download.microchip.com/)](https://packs.download.microchip.com/) -->
 
 ## Hardware Used
-
-<!-- All hardware used in this example must be listed here. Use unbreakable links!
-     - PIC18F47Q10 Curiosity Nano [(DM182029)](https://www.microchip.com/Developmenttools/ProductDetails/DM182029)
-     - Curiosity Nano Base for Click boards™ [(AC164162)](https://www.microchip.com/Developmenttools/ProductDetails/AC164162)
-     - POT Click board™ [(MIKROE-3402)](https://www.mikroe.com/pot-click) -->
-
-## Setup
-
-<!-- Explain how to connect hardware and set up software. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
-
-## Operation
-
-<!-- Explain how to operate the example. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
-
-## Summary
-
-<!-- Summarize what the example has shown -->
+- ATMEGA4809 Xplained Pro [(ATMEGA4809-XPRO)](https://www.microchip.com/developmenttools/ProductDetails/ATMEGA4809-XPRO)

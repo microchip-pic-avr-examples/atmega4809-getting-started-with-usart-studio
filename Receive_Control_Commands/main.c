@@ -22,11 +22,13 @@
 
 #define F_CPU 3333333
 #define USART1_BAUD_RATE(BAUD_RATE) ((float)(F_CPU * 64 / (16 * (float)BAUD_RATE)) + 0.5)
-#define MAX_COMMAND_LEN 8
+#define MAX_COMMAND_LEN		8
+#define INIT_DELAY			10	/* delay in ms */
 
 #include <avr/io.h>
 #include <stdio.h>
 #include <string.h>
+#include <util/delay.h>
 
 void USART1_init(void);
 void USART1_sendChar(char c);
@@ -41,7 +43,7 @@ void USART1_init(void)
 {
     PORTC.DIR &= ~PIN1_bm;
     PORTC.DIR |= PIN0_bm;
-    
+
     USART1.BAUD = (uint16_t)USART1_BAUD_RATE(9600);
 
     USART1.CTRLB |= USART_RXEN_bm | USART_TXEN_bm;
@@ -103,7 +105,7 @@ void executeCommand(char *command)
     } 
     else 
     {
-        USART1_sendString("Incorrect command.\r\n");
+        USART1_sendString("Type ON/OFF to control the LED.\r\n");
     }
 }
 
@@ -115,6 +117,10 @@ int main(void)
     
     LED_init();
     USART1_init();
+        
+    _delay_ms(INIT_DELAY); 
+        
+    USART1_sendString("Type ON/OFF to control the LED.\r\n");
     
     while (1)
     {

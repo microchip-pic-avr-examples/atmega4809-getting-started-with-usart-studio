@@ -6,7 +6,7 @@
 This project shows how to use the Universal Synchronous and Asynchronous Receiver and Transmitter (USART) to implement a command line interface. This way, the microcontroller can receive control commands via the USART. It is convenient to use the line terminator `\r\n` as a command delimiter, so for this use case the USART will read full lines. The application can decode:
 - **'ON'** command and will turn on an LED and reply with **'OK, LED ON.\r\n'**
 - **'OFF'** command and will turn off an LED and reply with **'OK, LED OFF.\r\n'**
-- for any other command, it will reply with **'Incorrect command.\r\n'**
+- for any other command, it will reply with **'Type ON/OFF to control the LED.\r\n'**
 
 ## Related Documentation
 More details and code examples on the ATMEGA4809 can be found at the following links:
@@ -71,9 +71,12 @@ USART0 configuration:
 
 ## Demo
 
+Note: open the terminal before programming the device. The help command "Type ON/OFF to control the LED." will be received. 
+
 <br><img src="images/demo.png" width="500">
 
 In this demo, commands are sent via serial communication and the confirm messages are received in a terminal.
+<br>Right after initialization, the board sends the "Type ON/OFF to control the LED." message. Then, it follows the behavior described in the description of this README.
 
 ## Summary
 

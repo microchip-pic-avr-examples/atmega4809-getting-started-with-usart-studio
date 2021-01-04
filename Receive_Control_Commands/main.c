@@ -23,7 +23,7 @@
 #define F_CPU 3333333
 #define USART1_BAUD_RATE(BAUD_RATE) ((float)(F_CPU * 64 / (16 * (float)BAUD_RATE)) + 0.5)
 #define MAX_COMMAND_LEN		8
-#define INIT_DELAY			10	/* delay in ms */
+#define INIT_DELAY			10	/* Delay to invalidate the after-reset noise on the PC0 pin (TX) */
 
 #include <avr/io.h>
 #include <stdio.h>
@@ -41,12 +41,12 @@ void executeCommand(char *command);
 
 void USART1_init(void)
 {
-    PORTC.DIR &= ~PIN1_bm;
-    PORTC.DIR |= PIN0_bm;
-
     USART1.BAUD = (uint16_t)USART1_BAUD_RATE(9600);
 
     USART1.CTRLB |= USART_RXEN_bm | USART_TXEN_bm;
+	
+	PORTC.DIR |= PIN0_bm;
+	PORTC.DIR &= ~PIN1_bm;
 }
 
 void USART1_sendChar(char c)
@@ -114,12 +114,13 @@ int main(void)
     char command[MAX_COMMAND_LEN];
     uint8_t index = 0;
     char c;
-    
-    LED_init();
+	
+	/* This delay invalidates the initial noise on the TX line, after device reset. */
+    _delay_ms(10);
+	
     USART1_init();
-        
-    _delay_ms(INIT_DELAY); 
-        
+    LED_init();
+	
     USART1_sendString("Type ON/OFF to control the LED.\r\n");
     
     while (1)

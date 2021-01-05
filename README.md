@@ -18,7 +18,6 @@ More details and code examples on the ATMEGA4809 can be found at the following l
 - [ATMEGA4809 Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=atmega4809)
 - [ATMEGA4809 Project Examples in START](https://start.atmel.com/#examples/ATMEGA4809XplainedPro)
 
-
 ## Software Used
 - Microchip Studio 7.0.2397 or newer [(microchip.com/mplab/microchip-studio)](https://www.microchip.com/mplab/microchip-studio)
 - ATmega_DFP 1.5.362 or newer Device Pack

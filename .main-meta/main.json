@@ -14,7 +14,7 @@
         },
         "compiler": [
 			{
-				"name": "avr-gcc",
+				"name": "AVR GCC",
 				"semverRange": "^5.4.0"
 			}
 		],
@@ -41,17 +41,13 @@
             [
                 "Peripherals",
                 "USART"
-            ],
-            [
-                "Development Kit",
-                "ATmega4809 Xplained Pro"
             ]
         ],
         "peripherals": [
             "USART"
         ],
         "keywords": [
-            "Bare Metal"
+            "Bare Metal", "Getting Started", "One-Wire", "Synchronous"
         ],
 		"additionalData": {
 			"longDescription": {

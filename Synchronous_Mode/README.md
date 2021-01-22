@@ -1,4 +1,3 @@
-<!-- Please do not change this logo with link -->
 [![MCHP](../images/microchip.png)](https://www.microchip.com)
 
  # Synchronous Mode
@@ -7,7 +6,7 @@ This project demonstrates how to use synchronous mode for the Universal Synchron
 
 ## Related Documentation
 More details and code examples on the ATMEGA4809 can be found at the following links:
-- [TB3216-Getting Started with USART](https://ww1.microchip.com/downloads/en/Appnotes/TB3216-Getting-Started-with-USART-90003216B.pdf)
+- [TB3216 - Getting Started with Universal Synchronous and Asynchronous Receiver and Transmitter (USART)](https://ww1.microchip.com/downloads/en/Appnotes/TB3216-Getting-Started-with-USART-DS90003216.pdf)
 - [ATMEGA4809 Product Page](https://www.microchip.com/wwwproducts/en/ATMEGA4809)
 - [ATMEGA4809 Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=atmega4809)
 - [ATMEGA4809 Project Examples in START](https://start.atmel.com/#examples/ATMEGA4809XplainedPro)

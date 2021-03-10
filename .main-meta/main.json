@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.studio.project.atmega4809-getting-started-with-usart-studio",
-        "version": "1.0.2",
-        "displayName": "Getting Started with USART",
+        "version": "1.0.4",
+        "displayName": "Getting Started with Universal Synchronous and Asynchronous Receiver and Transmitter (USART)",
         "projectName": "atmega4809-getting-started-with-usart-studio",
         "shortDescription": "This repository contains 5 bare metal code examples described in the TB3216-Getting Started with USART.",
         "ide": {

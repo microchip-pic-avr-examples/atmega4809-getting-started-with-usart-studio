@@ -1,6 +1,6 @@
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Getting Started with Universal Synchronous and Asynchronous Receiver and Transmitter (USART) Examples (Microchip Studio)
+# Getting Started with Universal Synchronous and Asynchronous Receiver and Transmitter (USART)
 
   This repository contains examples of bare metal source code for Universal Synchronous and Asynchronous Receiver and Transmitter (USART) as described in [TB3216 - Getting Started with Universal Synchronous and Asynchronous Receiver and Transmitter (USART)](https://ww1.microchip.com/downloads/en/Appnotes/TB3216-Getting-Started-with-USART-DS90003216.pdf) document from Microchip. The repository contains an Microchip Studio Solution with multiple projects inside:
 
@@ -19,7 +19,7 @@ More details and code examples on the ATMEGA4809 can be found at the following l
 
 
 ## Software Used
-- Microchip Studio 7.0.2397 or newer [(microchip.com/mplab/microchip-studio)](https://www.microchip.com/mplab/microchip-studio)
+- Microchip Studio 7.0.2397 or newer [(Microchip Studio for AVR® and SAM Devices)](https://www.microchip.com/en-us/development-tools-tools-and-software/microchip-studio-for-avr-and-sam-devices)
 - ATmega_DFP 1.5.362 or newer Device Pack
 
 
